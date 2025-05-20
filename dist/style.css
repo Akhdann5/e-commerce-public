@@ -149915,3 +149915,14 @@ h1, h2, h3, h4, h5, h5{
     animation: bounce 1s infinite;
   }
 }
+
+@font-face {
+  font-family: 'Advercase Demo';
+  src: url('font/AdvercaseFont-Demo-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hero-title {
+  font-family: 'Advercase Demo', sans-serif;
+}

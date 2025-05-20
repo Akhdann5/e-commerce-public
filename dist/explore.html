@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vargazs</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="fixed flex justify-center w-full pb-3 pt-9 gap-7 bg-white">
+        <!-- Search Bar -->
+        <div class="ml-56 w-full max-w-5xl relative flex">
+            <span class="absolute left-4 top-3 text-lg text-gray-400">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" class="w-full border border-gray-400 pl-12 py-3 pr-3 rounded focus:outline-none" placeholder="Search">
+        </div>
+
+        <!-- Login & Sign Up -->
+        <div class="flex items-center gap-4">
+            <a href="login.html" class="bg-blue-500 px-5 py-3 rounded-md text-white transition-all duration-300 hover:bg-transparent hover:text-blue-500 hover:border-blue-500 border">Login</a>
+            <a href="register.html" class="px-5 py-3 rounded-md text-black transition-all duration-300 hover:bg-gray-200">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- Left Bar -->
+    <div class="fixed top-0 left-0 z-50 h-screen border-r border-gray-400 w-1/6 px-6 py-4 bg-white">
+        <!-- Website Icon -->
+        <p class="hero-title flex justify-center pt-7 font-bold text-3xl">vargazs</p>
+
+        <!-- Bar -->
+        <div class="mt-16">
+            <a href="index.html" class="flex items-center justify-start gap-3 mb-11 ml-20 text-lg transition-all duration-300 hover:text-gray-500">
+                <i class="fa-solid fa-house text-xl"></i>
+                <p>Home</p>
+            </a>
+            <a href="explore.html" class="flex items-center justify-start gap-3 mb-11 ml-20 text-lg transition-all duration-300 hover:text-gray-500">
+                <i class="fa-solid fa-compass text-xl"></i>
+                <p class="border-b border-black transition-all duration-300 hover:border-gray-500">Explore</p>
+            </a>
+            <a href="#" class="flex items-center justify-start gap-3 mb-11 ml-20 text-lg transition-all duration-300 hover:text-gray-500">
+                <i class="fa-solid fa-bell text-xl"></i>
+                <p>Notification</p>
+            </a>
+            <a href="#" class="flex items-center justify-start gap-3 mb-11 ml-20 text-lg transition-all duration-300 hover:text-gray-500">
+                <i class="fa-solid fa-bookmark text-xl"></i>
+                <p>Saved</p>
+            </a>
+            <a href="#" class="flex items-center justify-start gap-3 mb-11 ml-20 text-lg transition-all duration-300 hover:text-gray-500">
+                <i class="fa-solid fa-arrow-up-from-bracket text-xl"></i>
+                <p>Post</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Trending Section -->
+    <section class="py-32 pl-36">
+
+        <!-- Trending Content -->
+        <div class="flex container gap-7">
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-1.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Lamine Yamal</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>0</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>13k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-2.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Kapten Modric</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>1.4k</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>1.3k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-3.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Billie Elish</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>2k</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>2.3m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="flex container gap-7">
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-4.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Donald T.</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>45</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>9.6k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-5.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Bro Nalisa</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>2.4k</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>3.4k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-6.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">AKIRA RWB</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>3m</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>17.3m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex container gap-7">
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-1.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Lamine Yamal</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>0</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>13k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-2.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Kapten Modric</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>1.4k</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>1.3k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-3.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Billie Elish</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>2k</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>2.3m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex container gap-7">
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-1.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Lamine Yamal</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>0</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>13k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-2.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Kapten Modric</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>1.4k</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>1.3k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-3.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Billie Elish</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>2k</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>2.3m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex container gap-7">
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-1.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Lamine Yamal</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>0</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>13k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-2.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Kapten Modric</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>1.4k</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>1.3k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-3.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Billie Elish</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>2k</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>2.3m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex container gap-7">
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-1.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Lamine Yamal</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>0</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>13k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-2.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Kapten Modric</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>1.4k</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>1.3k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-3.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Billie Elish</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>2k</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>2.3m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex container gap-7">
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-1.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Lamine Yamal</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>0</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>13k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-2.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Kapten Modric</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>1.4k</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>1.3k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-14 space-y-4">
+                <!-- Trending Images -->
+                <img src="images/trending-img/trending-img-3.png" alt="">
+    
+                <div class="flex" style="width: 430px;">
+
+                    <!-- Profile -->
+                    <div class="flex items-center gap-3">
+                        <img src="images/avatar.png" alt="" class="w-9">
+                        <p class="text-sm text-black font-semibold">Billie Elish</p>
+                    </div>
+                    <div class="flex items-center ml-5 bg-gray-300 px-3 rounded-md">
+                        <p class="font-bold text-white text-sm">TEAM</p>
+                    </div>
+
+                    <!-- User Interaction -->
+                    <div class="flex items-center space-x-3 ml-auto text-gray-400">
+                        <a href="" class="flex items-center gap-1">
+                            <i class="fa-regular fa-heart text-xl"></i>
+                            <p>2k</p>
+                        </a>
+                        <div class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>2.3m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+</html>
